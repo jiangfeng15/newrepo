@@ -1,0 +1,176 @@
+﻿生成启动时间为 2017/6/28 16:20:37。
+     1>项目“C:\Users\jiangyingfeng\Documents\Visual Studio 2013\Projects\Win32Project1\Win32Project1\Win32Project1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(274): warning C4005: “__RPC__in”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(161) : 参见“__RPC__in”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(275): warning C4005: “__RPC__in_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(162) : 参见“__RPC__in_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(276): warning C4005: “__RPC__in_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(227) : 参见“__RPC__in_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(277): warning C4005: “__RPC__deref_opt_in_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(179) : 参见“__RPC__deref_opt_in_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(279): warning C4005: “__RPC__in_ecount”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(163) : 参见“__RPC__in_ecount”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(280): warning C4005: “__RPC__in_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(164) : 参见“__RPC__in_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(281): warning C4005: “__RPC__in_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(165) : 参见“__RPC__in_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(282): warning C4005: “__RPC__in_ecount_part”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(166) : 参见“__RPC__in_ecount_part”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(283): warning C4005: “__RPC__in_ecount_full_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(230) : 参见“__RPC__in_ecount_full_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(284): warning C4005: “__RPC__in_ecount_full_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(231) : 参见“__RPC__in_ecount_full_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(285): warning C4005: “__RPC__inout_ecount_full_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(245) : 参见“__RPC__inout_ecount_full_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(286): warning C4005: “__RPC__in_ecount_part_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(232) : 参见“__RPC__in_ecount_part_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(288): warning C4005: “__RPC__deref_in”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(173) : 参见“__RPC__deref_in”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(289): warning C4005: “__RPC__deref_in_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(174) : 参见“__RPC__deref_in_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(290): warning C4005: “__RPC__deref_opt_in”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(177) : 参见“__RPC__deref_opt_in”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(291): warning C4005: “__RPC__deref_in_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(175) : 参见“__RPC__deref_in_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(292): warning C4005: “__RPC__deref_in_ecount”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(181) : 参见“__RPC__deref_in_ecount”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(293): warning C4005: “__RPC__deref_in_ecount_part”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(182) : 参见“__RPC__deref_in_ecount_part”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(294): warning C4005: “__RPC__deref_in_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(183) : 参见“__RPC__deref_in_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(295): warning C4005: “__RPC__deref_in_ecount_full_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(184) : 参见“__RPC__deref_in_ecount_full_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(296): warning C4005: “__RPC__deref_in_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(186) : 参见“__RPC__deref_in_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(297): warning C4005: “__RPC__deref_in_ecount_full_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(185) : 参见“__RPC__deref_in_ecount_full_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(298): warning C4005: “__RPC__deref_in_ecount_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(187) : 参见“__RPC__deref_in_ecount_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(299): warning C4005: “__RPC__deref_in_ecount_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(188) : 参见“__RPC__deref_in_ecount_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(300): warning C4005: “__RPC__deref_in_ecount_part_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(189) : 参见“__RPC__deref_in_ecount_part_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(303): warning C4005: “__RPC__out”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(201) : 参见“__RPC__out”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(304): warning C4005: “__RPC__out_ecount”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(202) : 参见“__RPC__out_ecount”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(305): warning C4005: “__RPC__out_ecount_part”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(204) : 参见“__RPC__out_ecount_part”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(306): warning C4005: “__RPC__out_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(205) : 参见“__RPC__out_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(307): warning C4005: “__RPC__out_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(206) : 参见“__RPC__out_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(310): warning C4005: “__RPC__inout”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(214) : 参见“__RPC__inout”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(311): warning C4005: “__RPC__inout_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(215) : 参见“__RPC__inout_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(313): warning C4005: “__RPC__inout_ecount”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(216) : 参见“__RPC__inout_ecount”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(314): warning C4005: “__RPC__inout_ecount_part”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(217) : 参见“__RPC__inout_ecount_part”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(315): warning C4005: “__RPC__inout_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(218) : 参见“__RPC__inout_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(316): warning C4005: “__RPC__inout_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(219) : 参见“__RPC__inout_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(319): warning C4005: “__RPC__in_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(226) : 参见“__RPC__in_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(320): warning C4005: “__RPC__in_ecount_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(228) : 参见“__RPC__in_ecount_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(324): warning C4005: “__RPC__inout_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(240) : 参见“__RPC__inout_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(325): warning C4005: “__RPC__inout_ecount_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(242) : 参见“__RPC__inout_ecount_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(326): warning C4005: “__RPC__inout_ecount_part_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(243) : 参见“__RPC__inout_ecount_part_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(327): warning C4005: “__RPC__inout_ecount_full_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(244) : 参见“__RPC__inout_ecount_full_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(331): warning C4005: “__RPC__deref_out”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(252) : 参见“__RPC__deref_out”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(332): warning C4005: “__RPC__deref_out_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(253) : 参见“__RPC__deref_out_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(333): warning C4005: “__RPC__deref_out_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(254) : 参见“__RPC__deref_out_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(334): warning C4005: “__RPC__deref_out_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(255) : 参见“__RPC__deref_out_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(335): warning C4005: “__RPC__deref_out_ecount”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(256) : 参见“__RPC__deref_out_ecount”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(336): warning C4005: “__RPC__deref_out_ecount_part”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(257) : 参见“__RPC__deref_out_ecount_part”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(337): warning C4005: “__RPC__deref_out_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(258) : 参见“__RPC__deref_out_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(338): warning C4005: “__RPC__deref_out_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(259) : 参见“__RPC__deref_out_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(342): warning C4005: “__RPC__deref_inout”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(266) : 参见“__RPC__deref_inout”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(343): warning C4005: “__RPC__deref_inout_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(267) : 参见“__RPC__deref_inout_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(344): warning C4005: “__RPC__deref_inout_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(268) : 参见“__RPC__deref_inout_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(345): warning C4005: “__RPC__deref_inout_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(269) : 参见“__RPC__deref_inout_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(346): warning C4005: “__RPC__deref_inout_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(273) : 参见“__RPC__deref_inout_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(347): warning C4005: “__RPC__deref_inout_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(274) : 参见“__RPC__deref_inout_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(348): warning C4005: “__RPC__deref_inout_ecount_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(270) : 参见“__RPC__deref_inout_ecount_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(349): warning C4005: “__RPC__deref_inout_ecount_part_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(271) : 参见“__RPC__deref_inout_ecount_part_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(350): warning C4005: “__RPC__deref_inout_ecount_full_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(272) : 参见“__RPC__deref_inout_ecount_full_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(351): warning C4005: “__RPC__deref_inout_ecount_full_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(275) : 参见“__RPC__deref_inout_ecount_full_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(356): warning C4005: “__RPC__deref_opt_inout”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(287) : 参见“__RPC__deref_opt_inout”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(357): warning C4005: “__RPC__deref_opt_inout_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(289) : 参见“__RPC__deref_opt_inout_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(358): warning C4005: “__RPC__deref_opt_inout_ecount”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(288) : 参见“__RPC__deref_opt_inout_ecount”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(359): warning C4005: “__RPC__deref_opt_inout_ecount_part”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(290) : 参见“__RPC__deref_opt_inout_ecount_part”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(360): warning C4005: “__RPC__deref_opt_inout_ecount_full”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(291) : 参见“__RPC__deref_opt_inout_ecount_full”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(361): warning C4005: “__RPC__deref_opt_inout_ecount_full_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(292) : 参见“__RPC__deref_opt_inout_ecount_full_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(363): warning C4005: “__RPC__deref_out_ecount_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(298) : 参见“__RPC__deref_out_ecount_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(364): warning C4005: “__RPC__deref_out_ecount_part_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(299) : 参见“__RPC__deref_out_ecount_part_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(365): warning C4005: “__RPC__deref_out_ecount_full_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(300) : 参见“__RPC__deref_out_ecount_full_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(366): warning C4005: “__RPC__deref_out_ecount_full_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(301) : 参见“__RPC__deref_out_ecount_full_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(368): warning C4005: “__RPC__deref_opt_inout_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(307) : 参见“__RPC__deref_opt_inout_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(369): warning C4005: “__RPC__deref_opt_inout_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(308) : 参见“__RPC__deref_opt_inout_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(370): warning C4005: “__RPC__deref_opt_inout_ecount_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(309) : 参见“__RPC__deref_opt_inout_ecount_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(371): warning C4005: “__RPC__deref_opt_inout_ecount_part_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(310) : 参见“__RPC__deref_opt_inout_ecount_part_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(372): warning C4005: “__RPC__deref_opt_inout_ecount_full_opt”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(311) : 参见“__RPC__deref_opt_inout_ecount_full_opt”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(373): warning C4005: “__RPC__deref_opt_inout_ecount_full_opt_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(312) : 参见“__RPC__deref_opt_inout_ecount_full_opt_string”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(375): warning C4005: “__RPC_full_pointer”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(318) : 参见“__RPC_full_pointer”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(376): warning C4005: “__RPC_unique_pointer”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(319) : 参见“__RPC_unique_pointer”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(377): warning C4005: “__RPC_ref_pointer”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(320) : 参见“__RPC_ref_pointer”的前一个定义
+     1>d:\duilib-master1\duilib\Control/Rpcsal.h(378): warning C4005: “__RPC_string”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\shared\rpcsal.h(321) : 参见“__RPC_string”的前一个定义
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jiangyingfeng\Documents\Visual Studio 2013\Projects\Win32Project1\Release\Win32Project1.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jiangyingfeng\Documents\Visual Studio 2013\Projects\Win32Project1\Release\Win32Project1.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jiangyingfeng\Documents\Visual Studio 2013\Projects\Win32Project1\Release\Win32Project1.lib" /MACHINE:X86 /SAFESEH Release\Win32Project1.res
+         Release\main.obj
+         正在生成代码
+         已完成代码的生成
+         Win32Project1.vcxproj -> C:\Users\jiangyingfeng\Documents\Visual Studio 2013\Projects\Win32Project1\Release\Win32Project1.exe
+     1>已完成生成项目“C:\Users\jiangyingfeng\Documents\Visual Studio 2013\Projects\Win32Project1\Win32Project1\Win32Project1.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.28

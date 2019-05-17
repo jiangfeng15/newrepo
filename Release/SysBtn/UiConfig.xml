@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1024,768" sizebox="4,4,4,4" caption="0,0,0,32" roundcorner="4,4" mininfo="800,600">
+	<Font shared="true" id="0" name="宋体" size="12" bold="true" />
+	<Font shared="true" id="1" name="宋体" size="13" bold="true" />
+	<Font shared="true" id="2" name="宋体" size="14" bold="true" />
+	<Font shared="true" id="3" name="宋体" size="12" bold="false" />
+	<Font shared="true" id="4" name="宋体" size="13" bold="false" />
+	<Include source="scrollbar.xml" />
+  <VerticalLayout padding="2,2,2,2" bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0" bordersize="2,0,2,2" bordercolor="#FFBCBCBC">
+ 		 <!--标题栏-->
+     <HorizontalLayout height="32" bkcolor="#FF008080">
+        <VerticalLayout width="32" height="32" >
+        		<Container  width="32" height="32" padding="0,0,0,0" bkimage="NB.png" bordersize="5,5,5,5" bordercolor="#FF008080"/>
+        </VerticalLayout>
+        <VerticalLayout height="32" >
+            	<Label text="双界面模块UID发行系统" textcolor="#FFFFFFFF" textpadding="5,2,5,2" font="1" width="300" height="32"/>
+        </VerticalLayout>
+        <VerticalLayout width="95">
+              <Button name="minbtn" tooltip="最小化" float="true" pos="5,5,0,0" width="28" height="20" normalimage="file='MinBtn_Normal.png' source='2,2,26,17'" hotimage="file='MinBtn_Hot.png' source='2,2,26,17'" pushedimage="file='MinBtn_Down.png' source='2,2,26,17'" />
+              <Button name="maxbtn" visible="true" tooltip="最大化" float="true" pos="35,5,0,0" width="28" height="20" normalimage="file='MaxBtn_Normal.png' source='1,1,27,18'" hotimage="file='MaxBtn_Hot.png' source='1,1,27,18'" pushedimage="file='MaxBtn_Down.png' source='1,1,27,18'" />
+              <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="35,5,0,0" width="28" height="20" normalimage="file='RestoreBtn_Normal.png' source='1,1,27,18'" hotimage="file='RestoreBtn_Hot.png' source='1,1,27,18'" pushedimage="file='RestoreBtn_Down.png' source='1,1,27,18'" />  
+              <Button name="closebtn" tooltip="关闭" float="true" pos="65,5,0,0" width="28" height="20" normalimage="file='CloseBtn_Normal.png' source='1,1,27,18'" hotimage="file='CloseBtn_Hot.png' source='1,1,27,18'" pushedimage="file='CloseBtn_Down.png' source='1,1,27,18'" />
+        </VerticalLayout>
+     </HorizontalLayout>
+     <!--客户区-->
+     <HorizontalLayout height="205" maxheight="210" bkcolor="#FFF0F0F0">
+     <!--板卡状态-->
+       <VerticalLayout bkcolor="#FFF0F0F0">
+    	    <HorizontalLayout height="27" bkcolor="#FF3399FF">
+    					<Label text="主写面板" textcolor="#FFFFFFFF" textpadding="5,3,0,0" font="0" width="300" rhaa="5"/>
+    			</HorizontalLayout>
+    			<!--绘制板卡显示-->
+    			<VerticalLayout height="190" bordersize="5,0,0,0" bordercolor="#FF3399FF">
+    					<Control height="5"/>
+						  <HorizontalLayout height="25" >
+						 		<Control width="10" />
+						 		
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check1" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate1" text="1" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check3" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate3" text="3" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check5" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate5" text="5" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check7" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate7" text="7" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check9" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate9" text="9" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check11" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate11" text="11" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check13" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate13" text="13" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check15" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate15" text="15" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check17" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate17" text="17" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check19" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate19" text="19" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check21" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate21" text="21" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check23" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate23" text="23" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check25" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate25" text="25" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check27" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate27" text="27" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check29" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate29" text="29" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check31" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate31" text="31" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check33" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate33" text="33" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check35" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate35" text="35" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check37" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate37" text="37" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check39" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate39" text="39" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>							    	              	              	              	              	              	              	              	              	              	              	              	              	              	              	              	            	              	              
+								<Control width="10" />
+								
+						  </HorizontalLayout>
+						  <Control height="2"/>
+						  <HorizontalLayout height="25">
+						 	<Control width="10"/>
+							<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check2" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate2" text="2" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check4" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate4" text="4" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check6" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate6" text="6" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check8" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate8" text="8" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check10" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate10" text="10" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check12" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate12" text="12" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check14" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate14" text="14" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check16" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate16" text="16" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check18" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate18" text="18" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check20" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate20" text="20" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check22" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate22" text="22" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check24" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate24" text="24" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check26" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate26" text="26" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check28" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate28" text="28" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check30" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate30" text="30" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check32" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate32" text="32" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check34" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate34" text="34" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check36" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate36" text="36" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check38" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate38" text="38" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check40" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate40" text="40" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>	
+							<Control width="10"/>
+						  </HorizontalLayout>
+						  <Control height="5"/>
+						  <HorizontalLayout height="25">
+						 	<Control width="10"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check41" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate41" text="41" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check43" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate43" text="43" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check45" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate45" text="45" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check47" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate47" text="47" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check49" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate49" text="49" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check51" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate51" text="51" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check53" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate53" text="53" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check55" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate55" text="55" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check57" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate57" text="57" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check59" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate59" text="59" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check61" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate61" text="61" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check63" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate63" text="63" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check65" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate65" text="65" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check67" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate67" text="67" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check69" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate69" text="69" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check71" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate71" text="71" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check73" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate73" text="73" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check75" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate75" text="75" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check77" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate77" text="77" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check79" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate79" text="79" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>							 	
+							<Control width="10"/>
+						  </HorizontalLayout>
+						  <Control height="2"/>						 
+						  <HorizontalLayout height="25">
+						 	<Control width="10"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check42" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate42" text="42" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check44" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate44" text="44" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check46" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate46" text="46" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check48" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate48" text="48" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check50" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate50" text="50" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check52" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate52" text="52" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check54" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate54" text="54" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check56" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate56" text="56" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check58" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate58" text="58" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check60" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate60" text="60" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check62" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate62" text="62" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check64" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate64" text="64" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check66" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate66" text="66" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check68" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate68" text="68" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check70" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate70" text="70" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check72" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate72" text="72" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check74" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate74" text="74" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check76" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate76" text="76" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check78" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate78" text="78" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check80" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate80" text="80" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>							 
+							<Control width="10"/>
+						  </HorizontalLayout>
+						  <Control height="5"/>	
+						  <HorizontalLayout height="25">
+						 	<Control width="10"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check81" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate81" text="81" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check83" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate83" text="83" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check85" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate85" text="85" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check87" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate87" text="87" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check89" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate89" text="89" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check91" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate91" text="91" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check93" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate93" text="93" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check95" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate95" text="95" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check97" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate97" text="97" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check99" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate99" text="99" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check101" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate101" text="101" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check103" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate103" text="103" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check105" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate105" text="105" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check107" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate107" text="107" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check109" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate109" text="109" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check111" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate111" text="111" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check113" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate113" text="113" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check115" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate115" text="115" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check117" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate117" text="117" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check119" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate119" text="119" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>							 
+							<Control width="10"/>
+						  </HorizontalLayout>
+						  <Control height="2"/>
+						  <HorizontalLayout height="25">
+						 	<Control width="10"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check82" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate82" text="82" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check84" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate84" text="84" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check86" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate86" text="86" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check88" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate88" text="88" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check90" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate90" text="90" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check92" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate92" text="92" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check94" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate94" text="94" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check96" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate96" text="96" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check98" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate98" text="98" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check100" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate100" text="100" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check102" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate102" text="102" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check104" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate104" text="104" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check106" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate106" text="106" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check108" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate108" text="108" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check110" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate110" text="110" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check112" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate112" text="112" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check114" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate114" text="114" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check116" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate116" text="116" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check118" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate118" text="118" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>
+	              <Control width="2"/>
+							 	<HorizontalLayout bordersize="1" bordercolor="#FFC0C0C0" >
+	                  <HorizontalLayout width="16" bkcolor="#FFA6CAF0">
+	                      <VerticalLayout>
+	                        	<Control />
+	                        	<Option name="check120" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="unchecked.png" selectedimage="checked.png" />
+	                        	<Control />
+	                      </VerticalLayout>
+	                  </HorizontalLayout>
+	                  <HorizontalLayout >
+	                      <Label name="boardstate120" text="120" align="center" />
+	                  </HorizontalLayout>
+	              </HorizontalLayout>							 	
+							<Control width="10"/>
+						  </HorizontalLayout>
+    				</VerticalLayout>
+    			</VerticalLayout>
+    			<!--复位操作-->
+    			<VerticalLayout width="160" maxwidth="200" bkcolor="#FFC0DCC0" bordersize="5,0,7,5" bordercolor="F0808080">
+    				<HorizontalLayout height="27" bkcolor="#F0808080">
+    					<Label text="面板操作" font="0" textcolor="#FFFFFFFF" textpadding="5,3,0,0" width="300" rhaa="5"/>
+    				</HorizontalLayout>
+    				<HorizontalLayout>
+    					<VerticalLayout>
+	    					<Control />
+	    					<HorizontalLayout height="35">
+	    						<Control />
+	    						<Button name="btnResetBoard" text="复位板卡" font="0" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+	    						<Control />
+	    					</HorizontalLayout>
+	    					<Control />
+    					</VerticalLayout>
+    				</HorizontalLayout>
+    				<HorizontalLayout>
+    					<VerticalLayout>
+    						<Control />
+    						<HorizontalLayout height="35">
+    							<Control />
+    							<Button name="btnClearSelect" text="清除勾选" font="0" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+    							<Control />
+    						</HorizontalLayout>
+    						<Control />
+    					</VerticalLayout>
+    				</HorizontalLayout>
+    			</VerticalLayout>
+    			<!--复位操作结束-->
+    		</HorizontalLayout>
+    		<HorizontalLayout>
+    			<!--信息填写操作-->
+    			<VerticalLayout width="320" maxwidth="400" bkcolor="#FFA6CAF0">
+    				<HorizontalLayout height="27" bkcolor="#FF008020">
+    					<Label text="任务信息" font="0" textcolor="#FFFFFFFF" textpadding="5,3,0,0" width="300" rhaa="5"/>
+    				</HorizontalLayout>
+    				<VerticalLayout width="320" height="250" bordersize="5,0,0,5" bordercolor="#FF008020" bkcolor="#FFA6CAF0">
+    					<HorizontalLayout >
+	    						<Control />
+	    						<HorizontalLayout width="280">
+	    							<VerticalLayout>
+			    							<Control />
+			    							<HorizontalLayout height="27">
+					    							<Label text="批次编号" font="0" textcolor="#FF000000" textpadding="2,0,10,0" width="80" height="27" rhaa="5"/>
+					    							<RichEdit name="BatchNum" tooltip="请输入批次编号" font="4" bordersize="1" focusbordercolor="#FF154B83" multiline="false" textcolor="#FF000000" bkcolor="#FFFFFFFF" textpadding="5,5,5,5" width="180" height="24" childpadding="10"/>		
+			    							</HorizontalLayout>
+			    							<Control />
+	    							</VerticalLayout>
+	    						</HorizontalLayout>
+	    						<Control />
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+	    						<Control />
+	    						<HorizontalLayout width="280">
+	    							<VerticalLayout>
+			    							<Control />
+			    							<HorizontalLayout height="27">
+			    									<Label text="物料代码" font="0" textcolor="#FF000000" textpadding="2,0,10,0" width="80" height="27" rhaa="5"/>
+			    									<RichEdit name="MaterialCode" tooltip="请输入物料代码" font="4" bordersize="1" focusbordercolor="#FF154B83" multiline="false" textcolor="#FF000000" bkcolor="#FFFFFFFF" width="180" height="24" childpadding="10"/>
+			    							</HorizontalLayout>
+			    							<Control />
+	    							</VerticalLayout>
+	    						</HorizontalLayout>
+	    						<Control />
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+	    						<Control />
+	    						<HorizontalLayout width="280">
+	    							<VerticalLayout>
+			    							<Control />
+			    							<HorizontalLayout height="27">
+					    							<Label text="机台名称" font="0" textcolor="#FF000000" textpadding="2,0,10,0" width="80" height="27" rhaa="5"/>
+					    							<RichEdit name="MachineName" tooltip="请输入机台名称" font="4" bordersize="1" focusbordercolor="#FF154B83" multiline="false" textcolor="#FF000000" bkcolor="#FFFFFFFF" width="180" height="24" childpadding="10"/>
+			    							</HorizontalLayout>
+			    							<Control />
+	    							</VerticalLayout>
+	    						</HorizontalLayout>
+	    						<Control />   
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+	    						<Control />
+	    						<HorizontalLayout width="280">
+		    							<VerticalLayout>
+				    							<Control />
+				    							<HorizontalLayout height="27">
+						    							<Label text="芯片类型" font="0" textcolor="#FF000000" textpadding="2,0,10,0" width="80" height="27" rhaa="5"/>
+						    							<Combo name="ChipType" droptype="droplist" width="180" height="27" textpadding="4,1,1,1"  normalimage="file='combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='combo.png' source='0,44,100,66' corner='2,2,22,2'" >
+					                    </Combo>
+			                    </HorizontalLayout>
+			                    <Control />
+	                    </VerticalLayout>
+	    						</HorizontalLayout>
+	    						<Control />	
+    					</HorizontalLayout>
+    				</VerticalLayout>
+						<!--放置列表框-->
+						<HorizontalLayout bordersize="5,0,0,5" bordercolor="#FF00A629" bkcolor="#FF87CEFE" inset="2,2,2,2">
+  						<List name="listex" bkcolor="#FFFFFFFF" inset="0,0,0,0" vscrollbar="true" hscrollbar="true">
+								<ListHeader height="24" menu="true">
+									<ListHeaderItem text="" flag="true" pos="5,0,0,0" inset="1,0,1,0" width="27" endellipsis="true" font="1" normalimage="headerctrl_normal.png" hotimage="headerctrl_hot.png" pushedimage="headerctrl_down.png" sepimage="Headerctrl_Sperator.png" sepwidth="2">
+										<VerticalLayout inset="1,0,5,0">
+											<CheckBox name="selall" endellipsis="true"  text="" selectedimage="file='checkbox_p.png' dest='0,2,15,17'" normalimage="file='checkbox_h.png' dest='0,2,15,17'" />
+										</VerticalLayout>
+									</ListHeaderItem>
+									<ListHeaderItem text="应用类型代码" minwidth="145" endellipsis="true" font="1" width="145"  normalimage="headerctrl_normal.png" hotimage="headerctrl_hot.png" pushedimage="headerctrl_down.png" sepimage="Headerctrl_Sperator.png" sepwidth="2"/>
+									<ListHeaderItem text="应用类型名称" minwidth="145" endellipsis="true" font="1" width="145"  normalimage="headerctrl_normal.png" hotimage="headerctrl_hot.png" pushedimage="headerctrl_down.png" sepimage="Headerctrl_Sperator.png" sepwidth="2"/>
+								</ListHeader>
+								<HorizontalLayout height="1" bordersize="1" bordercolor="#FF6FBBF9" />
+							</List>		
+    				</HorizontalLayout>
+						
+    			</VerticalLayout>
+    			<!--信息填写操作结束-->
+    			<!--发行信息操作-->
+    			<VerticalLayout >
+    				<HorizontalLayout height="27" bkcolor="#FF00A629">
+    					<Label text="发行状态" textcolor="#FFFFFFFF" textpadding="5,3,0,0" font="0" width="300" rhaa="5"/>
+    				</HorizontalLayout>
+    				<HorizontalLayout>
+    					<RichEdit name="editmsg" bordersize="5,0,5,5" bordercolor="#FF00A629" inset="4,2,4,2" bkcolor="#FFE2E5EA" font="3" multiline="true" rich="false" vscrollbar="true" autovscroll="true" hscrollbar="true" autohscroll="true" />
+    				</HorizontalLayout>
+    			</VerticalLayout>
+    			<!--发行信息操作结束-->
+    			<!--动作执行操作-->
+    			<VerticalLayout width="160" maxwidth="300" bkcolor="#FFA6CAF0" bordersize="0,0,7,5" bordercolor="#FF00A629">
+    				<HorizontalLayout height="27" bkcolor="#FF009124">
+    					<Label text="动作执行" textcolor="#FFFFFFFF" textpadding="5,3,0,0" font="0" width="300" rhaa="5"/>
+    				</HorizontalLayout>
+    				<!--HorizontalLayout width="160"-->
+    				<HorizontalLayout height="40">
+    				</HorizontalLayout>
+    					<HorizontalLayout>
+    						<Control />
+    						<Button name="btnConnectBoard" text="设备连接" font="0" rhaa="5" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+    						<Control />
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+    						<Control />
+    						<Button name="btnStartIssue" text="启动服务"  font="0" rhaa="5" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+    						<Control />
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+    						<Control />
+    						<Button name="btnStopIssue" text="停止服务"  font="0" rhaa="5" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+    					  <Control />
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+    						<Control />
+    						<Button name="btnCalCount" text="统计数量"  font="0" rhaa="5" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+    					  <Control />
+    					</HorizontalLayout>
+    					<HorizontalLayout >
+    						<Control />
+    						<Button name="btnExitSys" text="退出系统"  font="0" rhaa="5" width="81" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.png" hotimage="button_over.png" focusedimage="button_down.png"/>
+    						<Control />
+    					</HorizontalLayout>
+    				<!--/HorizontalLayout-->
+    			</VerticalLayout>
+    			<!--动作执行操作结束-->
+    		</HorizontalLayout>
+    		<!--状态栏-->
+    		<HorizontalLayout height="27" bkcolor="#FFB4B4B4">
+    				<Label name="statusBarInfo" flag="true" pos="10,5,0,0" text="" textpadding="5,0,0,0" font="3" />
+    		</HorizontalLayout>
+    </VerticalLayout>
+</Window>
